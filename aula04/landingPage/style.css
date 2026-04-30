@@ -46,6 +46,14 @@ body {
     line-height: 1.6;
 }
 
+h2 {
+    font-size: clamp(1.75rem, 3.5rem, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--cor-texto);
+    margin-bottom: var(--espaco-lg);
+}
+
 .navbar {
     /*Fixa o elemento na tela */
     position: fixed;
@@ -339,4 +347,70 @@ body {
     font-size: 0.875rem;
     color: var(--cor-texto-suave);
     line-height: 1.5;
+}
+
+/* SOLUÇÕES ====================================================== */
+
+.solucoes {
+    background-color: var(--cor-fundo-secundario);
+    padding: var(--espaco-xxl) 0;
+}
+
+.solucoes .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solucoes-header {
+    text-align: center;
+    margin-bottom: var(--espaco-xxl);
+}
+
+.solucoes-descricao {
+    text-align: center;
+    font-size: 1.0625rem;
+    color: var(--cor-texto-suave);
+    line-height: 1.75;
+    margin: 0 auto;
+    max-width: 38rem;
+}
+
+.cards-grid {
+    display: grid;
+    /*auto-fill: o grid cria quantas colunas couberem */
+    /*minmax(400px, 1fr): cada coluna tem no minimo 400px e no máximo 1fr(distribui no espaço restante) */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: var(--espaco-md);
+}
+
+.card {
+    background-color: var(--cor-branca);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-lg);
+    padding: var(--espaco-xl);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px #00000020;
+}
+
+.cards-icone {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: var(--espaco-md);
+}
+
+.card-titulo {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--cor-texto);
+    margin-bottom: var(--espaco-xs);
+}
+
+.card-descricao {
+    font-size: 0.9375rem;
+    color: var(--cor-texto-suave);
+    line-height: 1.7;
 }
