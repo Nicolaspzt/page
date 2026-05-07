@@ -414,3 +414,166 @@ h2 {
     color: var(--cor-texto-suave);
     line-height: 1.7;
 }
+
+/* EQUIPES ====================================================== */
+
+.equipe {
+    padding: var(--espaco-xxl) 0;
+}
+
+.container-equipe {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dados-equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--espaco-xl);
+    margin-top: var(--espaco-xxl);
+}
+
+.membro-equipe {
+    width: 100%;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    width: 112px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    border-radius: 50%;
+    margin-bottom: var(--espaco-md);
+}
+
+.avatar-hover {
+    transition: scale(1.2);
+    transition: ease 0.3s;
+}
+
+.membro-cargo {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    margin-bottom: var(--espaco-sm);
+}
+
+.membro-descricao {
+    font-size: 0.875rem;
+    color: var(--cor-texto-suave);
+}
+
+.contato {
+    background-color: var(--cor-fundo-secundario);
+    padding: var(--espaco-xxl) 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contato {
+    background: #f4f6fb;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contato__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* LADO ESQUERDO */
+.contato__info {
+    background: #1554c0;
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: start;
+}
+
+.contato__info h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.contato__lista {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.contato__lista li {
+    margin-bottom: 10px;
+}
+
+.contato__rodape {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* FORMULÁRIO */
+.contato__form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    text-align: start;
+}
+
+.form__linha {
+    display: flex;
+    gap: 20px;
+}
+
+.form__campo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form__campo label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form__campo input,
+.form__campo textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+    outline: none;
+}
+
+.textarea {
+    resize: none;
+}
+
+.btn-enviar {
+    width: 100%;
+    background: #1554c0;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background: #0f3f94;
+}
