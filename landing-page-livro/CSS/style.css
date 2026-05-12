@@ -8,7 +8,7 @@
 body{
   background:#ddd4c2;
   display:flex;
-  justify-content:center;
+  justify-content:flex-end;
   padding:20px 10px;
   color:#1f1f1f;
 }
@@ -53,7 +53,6 @@ body{
   padding:5px 10px;
   border-radius:6px;
   border:1px solid #6e4d1f;
-  font-size:11px;
   font-weight:bold;
   box-shadow:2px 2px 0 #8a5b1d;
 }
@@ -69,7 +68,7 @@ body{
 .book,
 .book2{
   width:100%;
-  max-width:165px;
+  max-width:400px;
   border-radius:4px;
   box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
@@ -82,9 +81,9 @@ body{
   border:1px solid #7b5826;
   border-radius:14px;
   padding:14px;
-  font-size:15px;
   line-height:1.5;
   box-shadow:3px 3px 0 #8a5b1d;
+  
 }
 
 .speech{
@@ -117,6 +116,14 @@ hr{
   margin:10px -18px 35px;
 }
 
+.caracteristicas{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  align-items:start;
+  margin-bottom: 40px;
+}
+
 .middle{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -129,6 +136,7 @@ hr{
   flex-direction:column;
   gap:22px;
   padding-top:10px;
+  margin-bottom: 20px;
 }
 
 .small-btn{
@@ -152,7 +160,6 @@ hr{
 }
 
 .questions h2{
-  font-size:22px;
   font-weight:500;
   line-height:1.6;
   margin-bottom:28px;
@@ -161,7 +168,6 @@ hr{
 .mini-badge{
   display:inline-block;
   padding:6px 12px;
-  font-size:11px;
   border-radius:10px;
   font-weight:bold;
 }
@@ -222,4 +228,59 @@ hr{
   .footer h3{
     font-size:28px;
   }
+}
+
+.desconstrução-btn{
+  background:#d49b39;
+  border:1px solid #7a4d00;
+  border-radius:12px;
+  padding:10px 12px;
+  font-weight:bold;
+  width:max-content;
+  box-shadow:0 3px 5px rgba(0,0,0,.15);
+  box-shadow: 3px 3px 0 #8a5b1d;
+}
+
+.riqueza-btn{
+  background:#d49b39;
+  border:1px solid #7a4d00;
+  border-radius:12px;
+  padding:10px 12px;
+  font-weight:bold;
+  width:max-content;
+  box-shadow:0 3px 5px rgba(0,0,0,.15);
+  box-shadow: 3px 3px 0 #8a5b1d;
+}
+
+.pilares-btn{
+  background:#d49b39;
+  border:1px solid #7a4d00;
+  border-radius:12px;
+  padding:10px 12px;
+  font-weight:bold;
+  width:max-content;
+  box-shadow:0 3px 5px rgba(0,0,0,.15);
+  box-shadow: 3px 3px 0 #8a5b1d;
+}
+
+.finanças-btn{
+  background:#d49b39;
+  border:1px solid #7a4d00;
+  border-radius:12px;
+  padding:10px 12px;
+  font-weight:bold;
+  width:max-content;
+  box-shadow:0 3px 5px rgba(0,0,0,.15);
+  box-shadow: 3px 3px 0 #8a5b1d;
+}
+
+h3{
+  background:#d49b39;
+  border:1px solid #7a4d00;
+  border-radius:12px;
+  padding:10px 12px;
+  font-weight:bold;
+  width:max-content;
+  box-shadow:0 3px 5px rgba(0,0,0,.15);
+  box-shadow: 3px 3px 0 #8a5b1d;
 }
