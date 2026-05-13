@@ -34,11 +34,12 @@ body{
 }
 
 .top img{
-  width:78px;
-  height:78px;
+  width:100px;
+  height:100px;
   border-radius:50%;
   object-fit:cover;
-  border:3px solid #d99c3d;
+  border:4px solid #d99c3d;
+  box-shadow: 2px 4px 0 #8a5b1d;
 }
 
 .author-name{
@@ -65,12 +66,30 @@ body{
   align-items:start;
 }
 
-.book,
-.book2{
+.book{
   width:100%;
-  max-width:400px;
+  max-width:500px;
   border-radius:4px;
+  border: 1px solid #111;
   box-shadow:0 3px 10px rgba(0,0,0,.2);
+  transition: 4s;
+  margin-bottom: 20px;
+
+  display: block;
+  
+}
+
+.bookk{
+  width:100%;
+  max-width:500px;
+  border-radius:4px;
+  border: 1px solid #111;
+  box-shadow:0 3px 10px rgba(0,0,0,.2);
+  transition: 4s;
+  margin-bottom: 20px;
+
+  display: block;
+  
 }
 
 .speech,
@@ -83,7 +102,7 @@ body{
   padding:14px;
   line-height:1.5;
   box-shadow:3px 3px 0 #8a5b1d;
-  
+    
 }
 
 .speech{
@@ -97,8 +116,8 @@ body{
 }
 
 .like{
-  width:34px;
-  height:34px;
+  width:50px;
+  height:50px;
   border-radius:50%;
   background:#d99c3d;
   border:1px solid #7b5826;
@@ -121,7 +140,11 @@ hr{
   grid-template-columns:1fr 1fr;
   gap:22px;
   align-items:start;
-  margin-bottom: 40px;
+  margin-bottom:40px;
+}
+
+.caracteristicas .book{
+  justify-self:end;
 }
 
 .middle{
@@ -146,11 +169,6 @@ hr{
   border-radius:12px;
   width:max-content;
   max-width:170px;
-}
-
-.book2{
-  margin-top:20px;
-  justify-self:center;
 }
 
 /* perguntas */
@@ -231,7 +249,7 @@ hr{
 }
 
 .desconstrução-btn{
-  background:#d49b39;
+  background:#FFDC94;
   border:1px solid #7a4d00;
   border-radius:12px;
   padding:10px 12px;
@@ -242,7 +260,7 @@ hr{
 }
 
 .riqueza-btn{
-  background:#d49b39;
+  background:#EDB85A;
   border:1px solid #7a4d00;
   border-radius:12px;
   padding:10px 12px;
@@ -253,7 +271,7 @@ hr{
 }
 
 .pilares-btn{
-  background:#d49b39;
+  background:#E5A350;
   border:1px solid #7a4d00;
   border-radius:12px;
   padding:10px 12px;
@@ -264,7 +282,7 @@ hr{
 }
 
 .finanças-btn{
-  background:#d49b39;
+  background:#B3762A;
   border:1px solid #7a4d00;
   border-radius:12px;
   padding:10px 12px;
